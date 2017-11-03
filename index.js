@@ -17,7 +17,7 @@ const HOURS_INTERVAL = 6
 
 const findTembelo = async () => {
   try {
-    const browser = await puppeteer.launch()
+    const browser = await puppeteer.launch({ args: ['--no-sandbox'] })
     const page = await browser.newPage()
     await page.goto(TEMBELO_URL)
     // Veremos si en el título se menciona a Stroessner

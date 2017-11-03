@@ -12,6 +12,9 @@
     "twitter",
     "bot"
   ],
+  "engines": {
+    "node": "8.x.x"
+  },
   "author": "Guillermo Peralta Scura",
   "license": "MIT",
   "dependencies": {

@@ -13,7 +13,7 @@ const TEMBELO_URL = "http://www.anr.org.py/paginas.php?cod=29"
 const TWEET_TEXT =
   "Stroessner sigue apareciendo como Líder Histórico de la ANR."
 const DESAPARECIDOS_TWEET_TEXT = "No mencionan asesinados ni torturados."
-const HOURS_INTERVAL = 6
+const HOURS_INTERVAL = 24
 
 const findTembelo = async () => {
   try {
@@ -64,5 +64,4 @@ const findTembelo = async () => {
   }
 }
 
-// setInterval(findTembelo, HOURS_INTERVAL * 60 * 1000 * 60)
-setInterval(findTembelo, 30 * 1000)
+setInterval(findTembelo, HOURS_INTERVAL * 60 * 1000 * 60)

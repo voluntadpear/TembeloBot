@@ -15,16 +15,17 @@ const TWEET_TEXT =
 const DESAPARECIDOS_TWEET_TEXT = "No mencionan asesinados ni torturados."
 const HOURS_INTERVAL = 6
 
-const findStroessner = async () => {
+const findTembelo = async () => {
   try {
     const browser = await puppeteer.launch()
     const page = await browser.newPage()
     await page.goto(TEMBELO_URL)
-    // Vemos si en el título se menciona a Stroessner
+    // Veremos si en el título se menciona a Stroessner
     const titleSelector = await page.$("span.txtAutoridades")
     let titleHtml = await page.evaluate(body => body.innerHTML, titleSelector)
     await titleSelector.dispose()
 
+    // Veremos si hay referencias a asesinados y a desparecidos en el cuerpo del artículo
     const textSelector = await page.$("div.textos_central")
     let textHtml = await page.evaluate(body => body.innerHTML, textSelector)
     await textSelector.dispose()
@@ -63,6 +64,5 @@ const findStroessner = async () => {
   }
 }
 
-findStroessner()
-//  setInterval(findStroessner, 30000)
-// setInterval(tweetNo, HOURS_INTERVAL * 60 * 1000 * 60)
+// setInterval(findTembelo, HOURS_INTERVAL * 60 * 1000 * 60)
+setInterval(findTembelo, 30 * 1000)

@@ -1,7 +1,7 @@
 {
-  "name": "catalunyabot",
+  "name": "tembelobot",
   "version": "1.0.0",
-  "description": "Is Catalunya a Country yet?",
+  "description": "Día a día recordando que Stroessner sigue figurando como líder histórico de la ANR",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,6 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "^4.0.0",
+    "puppeteer": "^0.12.0",
     "twit": "^2.2.9"
   }
 }

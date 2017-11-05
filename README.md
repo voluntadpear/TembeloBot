@@ -4,8 +4,9 @@ Twitter bot that checks once every 24 hours if paraguayan dictator Alfredo Stroe
 It can be found at [@TembeloBot](https://twitter.com/TembeloBot).
 
 ## Contribute
+Clone the project and run
 ```bash
-~ npm install
+$ npm install
 ```
 For development you can create a [Twitter app](https://apps.twitter.com/) and then create a ```.env``` file with your Twitter API Credentials. With that just run ```npm run start``` and you're done.
 

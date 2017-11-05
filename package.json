@@ -8,7 +8,10 @@
     "start": "node -r dotenv/config index.js"
   },
   "keywords": [
-    "catalunya",
+    "stroessner",
+    "dictadura",
+    "dictator",
+    "tembelo",
     "twitter",
     "bot"
   ],

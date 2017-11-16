@@ -65,3 +65,4 @@ const findTembelo = async () => {
 }
 
 setInterval(findTembelo, HOURS_INTERVAL * 60 * 1000 * 60)
+findTembelo()
